@@ -1,0 +1,12 @@
+
+<!DOCTYPE html>
+<head align="center">
+    This is a URL shortener
+<h3>Enter the link you want to shorten</h3>
+<body align="center">
+    <form action="add" method="GET">
+        {% csrf_token %}
+    <input type="text" name="evaluation_string" placeholder="ENTER THE LINK HERE"><br>
+    <input type="submit">
+    </form>
+</body>
